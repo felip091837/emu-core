@@ -1,31 +1,16 @@
-#!/usr/bin/env Rscript
-
-#SEED=$(( ( RANDOM % 10000 )  + 1 ))
-# media com Udp
+# UDP MEDIA
 x<-read.table("/home/cicero/core-ddos2/R/vazao.csv", sep=",", h=T)
-# media com 1 node
+# media com 1 atacante
 m1u<- x$udp[1]
 m1h<- x$http[1]
 
-# media com 5 node
+# media com 5 atacantes
 m5u<- x$udp[2]
 m5h<- x$http[2]
 
-# media com 8 node
+# media com 8 atacantes
 m8u<- x$udp[3]
 m8h<- x$http[3]
-
-# sd com 1 node
-s1u<- x$sdu[1]
-s1h<- x$sdh[1]
-
-# sd com 5 node
-s5u<- x$sdu[2]
-s5h<- x$sdh[2]
-
-# sd com 8 node
-s8u<- x$sdu[3]
-s8h<- x$sdh[3]
 
 # confiança de 95% 
 transfz <- 1.96
