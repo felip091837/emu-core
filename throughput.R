@@ -99,7 +99,4 @@ lines(c(1,5,8),c(m1u,m5u,m8u), col="blue", lty=2)
 # http 12321
 lines(c(1,5,8),c(m1h,m5h,m8h), col="green", lty=2)
 
-#arrows(c(1,1),c(x$interval[8],x$interval[8]),c(1,1),c(udpn,udpp),col="blue",an$
-#arrows(c(15,15),c(mudpc,mudpc),c(15,15),c(iudpcn,iudpcp),col=2,angle=90)
-
 dev.off()
