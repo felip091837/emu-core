@@ -1,7 +1,5 @@
 #!/bin/bash
 
-touch /tmp/log_apache.txt
-
 while true; do
     status=$(curl --write-out %{http_code} --connect-timeout 5  --silent --output /dev/null http://10.0.1.10/index.html)
         if [ $status -eq 200 ]; then  
